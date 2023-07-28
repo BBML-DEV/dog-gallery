@@ -1,11 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    container: {
+      padding: '1rem',
+      center: true,
+    },
+    extend: {
+      fontFamily: {
+        sans: [
+          'Helvetica',
+          'Arial',
+          'Sans-serif',
+          ...defaultTheme.fontFamily.sans,
+        ],
+      },
+    },
   },
   plugins: [],
 }
