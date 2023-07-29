@@ -4,7 +4,7 @@ import User from '../../../../assets/usuario.svg'
 
 export const Header = () => {
   return (
-    <header className="shadow fixed py-2 w-full z-50 bg-white">
+    <header className="shadow fixed w-full z-50 bg-white top-0">
       <nav className="container w-[50rem] h-16 flex justify-between items-center">
         <Link to={'/'} aria-label="Dogs - Home" className="py-2">
           <img src={Dogs} />

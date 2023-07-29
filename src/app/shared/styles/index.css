@@ -7,6 +7,10 @@
         @apply text-gray-500;
     }
 
+    body{
+        padding-top: 4rem;
+    }
+
     img{
         display: block;
         max-width: 100%;
