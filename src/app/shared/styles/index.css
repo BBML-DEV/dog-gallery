@@ -15,4 +15,23 @@
         display: block;
         max-width: 100%;
     }
+    
+    .boxShadowButton {
+        box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+    }
+
+    .inputBorder {
+        outline: none;
+        border-color: #fb1;
+        background-color: white;
+        box-shadow: 0 0 0 3px #fea;
+    }
 }
+
+
+
+@layer components {
+    .btn {
+        @apply bg-amber-400 text-amber-900 py-3 px-5 text-base rounded w-32 transition delay-75;
+      }
+  }
